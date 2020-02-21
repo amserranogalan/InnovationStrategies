@@ -19,7 +19,7 @@ namespace InnovationStrategies
                 msb.Server="localhost"; 
                 msb.Database="InnovationStrategies";
                 msb.UserID="root";
-                msb.Password="cvmenci2014";
+                msb.Password="";
 
                 MySqlConnection mCn = new MySqlConnection(msb.ToString());
 
