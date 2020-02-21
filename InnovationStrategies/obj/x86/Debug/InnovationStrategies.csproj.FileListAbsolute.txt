@@ -1,9 +1,0 @@
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\bin\Debug\InnovationStrategies.exe
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\bin\Debug\InnovationStrategies.pdb
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.Properties.Resources.resources
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.csproj.GenerateResource.Cache
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.exe
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.pdb
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\bin\Debug\InnovationStrategies.exe.config
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.Form1.resources
-C:\Users\negro\Desktop\InnovationStrategies\InnovationStrategies\obj\x86\Debug\InnovationStrategies.csprojResolveAssemblyReference.cache
