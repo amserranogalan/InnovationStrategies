@@ -9,10 +9,6 @@ namespace InnovationStrategies
 {
     public class InfringementType
     {
-        private int _Points;
-        private int _NumberInfringement;
-        private string _Infringement;
-    
         public int NumberInfringement { get; set; }
         public string Infringement { get; set; }
         public int Points { get; set; }

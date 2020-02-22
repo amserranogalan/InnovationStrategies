@@ -9,11 +9,6 @@ namespace InnovationStrategies
 {
     public class InfringementDrivers
     {
-        private int _NumberInfringement;
-        private string _Dni;
-        private DateTime _Date;
-        private string _VehicleRegistration;
-
         public int NumberInfringement { get; set; }
         public string Dni { get; set; }
         public DateTime Date { get; set; }

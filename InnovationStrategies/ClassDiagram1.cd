@@ -3,7 +3,7 @@
   <Class Name="InnovationStrategies.Vehicles">
     <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAMAAAIAAAAAEAAAIAAAAAAAAAAAAAAAAAgAAAEBAIE=</HashCode>
+      <HashCode>AAMAAAIAAAAAAAAAIAAAAAAAAAAAAAAAAAgAAAEBAAA=</HashCode>
       <FileName>Domain\Vehicles.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -11,9 +11,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="InnovationStrategies.Drivers">
-    <Position X="2.5" Y="1.25" Width="1.5" />
+    <Position X="2.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAMAAAIAAQAAhAACgAAAIASgAAAIAAAAAAAAAAEBAAA=</HashCode>
+      <HashCode>AAMAAAIAAQAAgAACAAAAAASgAAAIAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Domain\Drivers.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -22,9 +22,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="InnovationStrategies.InfringementType">
-    <Position X="6" Y="1.25" Width="1.5" />
+    <Position X="7.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAggAAAgAAAAAIAEAAgAAAAAAAAggAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAgAAAAgAAAAAIAAAAgAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Domain\InfringementType.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -32,16 +32,16 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="InnovationStrategies.InfringementDrivers">
-    <Position X="4.25" Y="1.25" Width="1.5" />
+    <Position X="5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAMAAAAgAIAAEAAAIAAAEAAAAEAAAAABBAAAAAABAAA=</HashCode>
+      <HashCode>AAMAAAAgAIAAAAAAIAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Domain\InfringementDrivers.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InnovationStrategies.VehicleDrivers">
     <Position X="1.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAMAAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAMAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domain\VehicleDrivers.cs</FileName>
     </TypeIdentifier>
   </Class>

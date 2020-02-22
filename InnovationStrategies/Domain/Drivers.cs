@@ -8,12 +8,7 @@ using System.Data;
 namespace InnovationStrategies
 {
     public class Drivers
-    {
-        private string _Dni;
-        private string _Name;
-        private string _Surnames;
-        private int _points;
-    
+    {    
         public string Dni { get; set; }
         public string Name { get; set; }
         public string Surnames { get; set; }

@@ -8,11 +8,6 @@ namespace InnovationStrategies
 {
     public class Vehicles
     {
-        private string _Brand;
-        private string _Model;
-        private string _Dni;
-        private string _VehicleRegistration;
-    
         public string VehicleRegistration { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }

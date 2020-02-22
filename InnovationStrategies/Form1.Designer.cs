@@ -72,11 +72,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dgvTopDrivers = new System.Windows.Forms.DataGridView();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.btnVehicleDriver = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.txtDniDriver = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtVehicleDriver = new System.Windows.Forms.TextBox();
-            this.btnVehicleDriver = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoints)).BeginInit();
@@ -122,7 +123,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(720, 213);
+            this.tabPage1.Size = new System.Drawing.Size(817, 213);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tipo Infracción";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -196,7 +197,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(720, 213);
+            this.tabPage2.Size = new System.Drawing.Size(817, 213);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Conductor";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -269,7 +270,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(720, 213);
+            this.tabPage3.Size = new System.Drawing.Size(817, 213);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Infracción";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -463,6 +464,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.btnSearch);
             this.tabPage6.Controls.Add(this.dgvHabitualInfractions);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
@@ -476,12 +478,11 @@
             // 
             this.dgvHabitualInfractions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvHabitualInfractions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHabitualInfractions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHabitualInfractions.Location = new System.Drawing.Point(3, 3);
+            this.dgvHabitualInfractions.Location = new System.Drawing.Point(3, 30);
             this.dgvHabitualInfractions.MultiSelect = false;
             this.dgvHabitualInfractions.Name = "dgvHabitualInfractions";
             this.dgvHabitualInfractions.RowHeadersVisible = false;
-            this.dgvHabitualInfractions.Size = new System.Drawing.Size(811, 207);
+            this.dgvHabitualInfractions.Size = new System.Drawing.Size(811, 180);
             this.dgvHabitualInfractions.TabIndex = 1;
             // 
             // tabPage7
@@ -565,6 +566,16 @@
             this.tabPage8.Text = "Añadir conductor a vehículo";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // btnVehicleDriver
+            // 
+            this.btnVehicleDriver.Location = new System.Drawing.Point(361, 4);
+            this.btnVehicleDriver.Name = "btnVehicleDriver";
+            this.btnVehicleDriver.Size = new System.Drawing.Size(75, 23);
+            this.btnVehicleDriver.TabIndex = 21;
+            this.btnVehicleDriver.Text = "Agregar";
+            this.btnVehicleDriver.UseVisualStyleBackColor = true;
+            this.btnVehicleDriver.Click += new System.EventHandler(this.btnVehicleDriver_Click);
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -597,15 +608,15 @@
             this.txtVehicleDriver.Size = new System.Drawing.Size(121, 20);
             this.txtVehicleDriver.TabIndex = 15;
             // 
-            // btnVehicleDriver
+            // btnSearch
             // 
-            this.btnVehicleDriver.Location = new System.Drawing.Point(361, 4);
-            this.btnVehicleDriver.Name = "btnVehicleDriver";
-            this.btnVehicleDriver.Size = new System.Drawing.Size(75, 23);
-            this.btnVehicleDriver.TabIndex = 21;
-            this.btnVehicleDriver.Text = "Agregar";
-            this.btnVehicleDriver.UseVisualStyleBackColor = true;
-            this.btnVehicleDriver.Click += new System.EventHandler(this.btnVehicleDriver_Click);
+            this.btnSearch.Location = new System.Drawing.Point(3, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 17;
+            this.btnSearch.Text = "Buscar";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Form1
             // 
@@ -691,6 +702,7 @@
         private System.Windows.Forms.TextBox txtDniDriver;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtVehicleDriver;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 

@@ -19,8 +19,6 @@ namespace InnovationStrategies
             cmbNumberInfringement.DataSource = InfringementType.GetAll();
             cmbNumberInfringement.ValueMember="number";
             cmbNumberInfringement.DisplayMember = "infringement";
-
-            dgvHabitualInfractions.DataSource = InfringementDrivers.HabitualInfractions();
         }
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -50,14 +48,27 @@ namespace InnovationStrategies
 
         private void btnOkInfringement_Click(object sender, EventArgs e)
         {
-            InfringementDriversService ids = new InfringementDriversService();
+            if (txtVehicle.Text != "")
+            {
+                InfringementDriversService ids = new InfringementDriversService();
 
-            ids.AddInfringement(Convert.ToInt32(cmbNumberInfringement.SelectedValue.ToString()), txtVehicle.Text);
+                try
+                {
+                    ids.AddInfringement(Convert.ToInt32(cmbNumberInfringement.SelectedValue.ToString()), txtVehicle.Text);
+                    ids = null;
+                }
+                catch (InvalidOperationException ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.Message);
+                }
 
-            ids = null;
-
-            txtVehicle.Text = "";
-            cmbNumberInfringement.SelectedIndex = 0;
+                txtVehicle.Text = "";
+                cmbNumberInfringement.SelectedIndex = 0;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Introduzca la matrícula del vehículo.");
+            }
         }
 
         private void btnOkVehicles_Click(object sender, EventArgs e)
@@ -122,6 +133,11 @@ namespace InnovationStrategies
             {
                 System.Windows.Forms.MessageBox.Show("Introduzca el DNI y la matrícula del vehículo.");
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            dgvHabitualInfractions.DataSource = InfringementDrivers.HabitualInfractions();
         }
     }
 }

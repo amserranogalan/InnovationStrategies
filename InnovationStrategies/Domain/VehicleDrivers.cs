@@ -8,9 +8,6 @@ namespace InnovationStrategies
 {
     public class VehicleDrivers
     {
-        private string _Dni;
-        private string _VehicleRegistration;
-
         public string Dni { get; set; }
         public string VehicleRegistration { get; set; }
 
