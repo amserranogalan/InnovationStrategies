@@ -23,27 +23,41 @@ namespace InnovationStrategies
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            InfringementTypeService its = new InfringementTypeService();
+            if (txtInfringement.Text!="")
+            {
+                InfringementTypeService its = new InfringementTypeService();
 
-            its.AddInfringement(txtInfringement.Text, decimal.ToInt32(nudPoints.Value));
+                its.AddInfringement(txtInfringement.Text, decimal.ToInt32(nudPoints.Value));
 
-            its = null;
+                its = null;
 
-            txtInfringement.Text = "";
-            nudPoints.Value=1;
+                txtInfringement.Text = "";
+                nudPoints.Value = 1;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Introduzca la descripción de la infracción.");
+            }
         }
 
         private void btnOkDriver_Click(object sender, EventArgs e)
         {
-            DriversService ds = new DriversService();
+            if (txtDni.Text=="" || txtName.Text=="" || txtSurnames.Text=="")
+            {
+                System.Windows.Forms.MessageBox.Show("Introduzca todos los datos del conductor.");
+            }
+            else
+            {
+                DriversService ds = new DriversService();
 
-            ds.AddDriver(txtDni.Text, txtName.Text, txtSurnames.Text);
+                ds.AddDriver(txtDni.Text, txtName.Text, txtSurnames.Text);
 
-            ds = null;
+                ds = null;
 
-            txtDni.Text = "";
-            txtName.Text = "";
-            txtSurnames.Text = "";
+                txtDni.Text = "";
+                txtName.Text = "";
+                txtSurnames.Text = "";
+            }            
         }
 
         private void btnOkInfringement_Click(object sender, EventArgs e)
@@ -67,29 +81,36 @@ namespace InnovationStrategies
             }
             else
             {
-                System.Windows.Forms.MessageBox.Show("Introduzca la matrícula del vehículo.");
+                System.Windows.Forms.MessageBox.Show("Introduzca la matrícula del vehículo y el tipo de infracción.");
             }
         }
 
         private void btnOkVehicles_Click(object sender, EventArgs e)
         {
-            try
+            if (txtDniConductorHabitual.Text != "" && txtBrand.Text != "" && txtModel.Text != "" && txtVehicleRegistration.Text != "")
             {
-                VehiclesService vs = new VehiclesService();
+                try
+                {
+                    VehiclesService vs = new VehiclesService();
 
-                vs.AddVehicle(txtVehicleRegistration.Text, txtBrand.Text, txtModel.Text, txtDniConductorHabitual.Text);
+                    vs.AddVehicle(txtVehicleRegistration.Text, txtBrand.Text, txtModel.Text, txtDniConductorHabitual.Text);
 
-                vs = null;
+                    vs = null;
+                }
+                catch (InvalidOperationException ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.Message);
+                }
+
+                txtDniConductorHabitual.Text = "";
+                txtBrand.Text = "";
+                txtModel.Text = "";
+                txtVehicleRegistration.Text = "";
             }
-            catch(InvalidOperationException ex)
+            else
             {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
+                System.Windows.Forms.MessageBox.Show("Introduzca los datos del vehículo.");
             }
-            
-            txtDniConductorHabitual.Text="";
-            txtBrand.Text="";
-            txtModel.Text="";
-            txtVehicleRegistration.Text="";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
