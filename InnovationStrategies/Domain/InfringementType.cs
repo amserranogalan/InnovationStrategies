@@ -7,48 +7,15 @@ using System.Data;
 
 namespace InnovationStrategies
 {
-    public class InfringementType : IInfringementType
+    public class InfringementType
     {
         private int _Points;
         private int _NumberInfringement;
         private string _Infringement;
     
-        public int NumberInfringement
-        {
-            get
-            {
-                return _NumberInfringement;
-            }
-            set
-            {
-                _NumberInfringement = value;
-            }
-        }
-
-        public string Infringement
-        {
-            get
-            {
-                return _Infringement;
-            }
-            set
-            {
-                _Infringement = value;
-            }
-        }
-
-        public int Points
-        {
-            get
-            {
-                return _Points;
-            }
-            set
-            {
-                _Points = value;
-            }   
-        }
-
+        public int NumberInfringement { get; set; }
+        public string Infringement { get; set; }
+        public int Points { get; set; }
         public InfringementDrivers InfringementDrivers
         {
             get

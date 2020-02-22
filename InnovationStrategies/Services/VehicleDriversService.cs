@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InnovationStrategies
 {
-    class VehicleDriversService
+    class VehicleDriversService : IVehicleDriversService
     {
-        public static void AddDriver(string VehicleRegistration, string Dni)
+        public void AddDriver(string VehicleRegistration, string Dni)
         {
             VehicleDrivers vd = new VehicleDrivers();
 

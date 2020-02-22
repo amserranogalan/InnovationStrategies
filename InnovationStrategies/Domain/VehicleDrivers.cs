@@ -11,29 +11,8 @@ namespace InnovationStrategies
         private string _Dni;
         private string _VehicleRegistration;
 
-        public string Dni
-        {
-            get
-            {
-                return _Dni;
-            }
-            set
-            {
-                _Dni = value;
-            }
-        }
-
-        public string VehicleRegistration
-        {
-            get
-            {
-                return _VehicleRegistration;
-            }
-            set
-            {
-                _VehicleRegistration = value;
-            }
-        }
+        public string Dni { get; set; }
+        public string VehicleRegistration { get; set; }
 
         /// <summary>
         /// Add driver to vehicle

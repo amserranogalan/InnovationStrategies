@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InnovationStrategies
 {
-    class InfringementDriversService
+    class InfringementDriversService : IInfringementDriversService
     {
-        public static void AddInfringement(int NumberInfringement, string VehicleRegistration)
+        public void AddInfringement(int NumberInfringement, string VehicleRegistration)
         {
             //We build the new infraction
             InfringementDrivers id = new InfringementDrivers();

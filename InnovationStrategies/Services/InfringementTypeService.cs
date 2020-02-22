@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace InnovationStrategies
 {
-    class InfringementTypeService
+    class InfringementTypeService : IInfringementTypeService
     {
-        public static void AddInfringement(string infringement, int points)
+        public void AddInfringement(string infringement, int points)
         {
             InfringementType it = new InfringementType();
 

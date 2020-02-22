@@ -7,60 +7,17 @@ using System.Data;
 
 namespace InnovationStrategies
 {
-    public class Drivers : IDrivers
+    public class Drivers
     {
         private string _Dni;
         private string _Name;
         private string _Surnames;
         private int _points;
     
-        public string Dni
-        {
-            get
-            {
-                return _Dni;
-            }
-            set
-            {
-                _Dni = value;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return _Name;
-            }
-            set
-            {
-                _Name = value;
-            }
-        }
-
-        public string Surnames
-        {
-            get
-            {
-                return _Surnames;
-            }
-            set
-            {
-                _Surnames = value;
-            }
-        }
-
-        public int Points
-        {
-            get
-            {
-                return _points;
-            }
-            set
-            {
-                _points = value;
-            }
-        }
+        public string Dni { get; set; }
+        public string Name { get; set; }
+        public string Surnames { get; set; }
+        public int Points { get; set; }
 
         public InfringementDrivers InfringementDrivers
         {

@@ -6,61 +6,17 @@ using MySql.Data.MySqlClient;
 
 namespace InnovationStrategies
 {
-    public class Vehicles : IVehicles
+    public class Vehicles
     {
         private string _Brand;
         private string _Model;
         private string _Dni;
         private string _VehicleRegistration;
     
-        public string VehicleRegistration
-        {
-            get
-            {
-                return _VehicleRegistration;
-            }
-            set
-            {
-                _VehicleRegistration = value;
-            }
-        }
-
-        public string Brand
-        {
-            get
-            {
-                return _Brand;
-            }
-            set
-            {
-                _Brand = value;
-            }
-        }
-
-        public string Model
-        {
-            get
-            {
-                return _Model;
-            }
-            set
-            {
-                _Model = value;
-            }
-        }
-
-        public string Dni
-        {
-            get
-            {
-                return _Dni;
-            }
-            set
-            {
-                _Dni = value;
-            }
-        }
-
+        public string VehicleRegistration { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public string Dni { get; set; }
         public VehicleDrivers VehiclesDrivers
         {
             get => default(VehicleDrivers);

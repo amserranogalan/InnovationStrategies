@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace InnovationStrategies
+namespace InnovationStrategies.Tests
 {
-    public interface IInfringementDrivers
+    public class Class1
     {
-        void Add();
     }
 }

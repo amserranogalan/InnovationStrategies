@@ -4,78 +4,46 @@
     <Position X="0.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAMAAAIAAAAAEAAAIAAAAAAAAAAAAAAAAAgAAAEBAIE=</HashCode>
-      <FileName>Data\Vehicles.cs</FileName>
+      <FileName>Domain\Vehicles.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="VehiclesDrivers" />
     </ShowAsAssociation>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="InnovationStrategies.Drivers">
     <Position X="2.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAMAAAIAAQAAhAACgAAAIASgAAAIAAAAAAAAAAEBAAA=</HashCode>
-      <FileName>Data\Drivers.cs</FileName>
+      <FileName>Domain\Drivers.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="InfringementDrivers" />
       <Property Name="VehiclesDrivers" />
     </ShowAsAssociation>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="InnovationStrategies.InfringementType">
     <Position X="6" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAggAAAgAAAAAIAEAAgAAAAAAAAggAAAAAAAAA=</HashCode>
-      <FileName>Data\InfringementType.cs</FileName>
+      <FileName>Domain\InfringementType.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="InfringementDrivers" />
     </ShowAsAssociation>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="InnovationStrategies.InfringementDrivers">
     <Position X="4.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAMAAAAgAIAAEAAAIAAAEAAAAEAAAAABBAAAAAABAAA=</HashCode>
-      <FileName>Data\InfringementDrivers.cs</FileName>
+      <FileName>Domain\InfringementDrivers.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="InnovationStrategies.VehicleDrivers">
     <Position X="1.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAMAAAAAAAAAEAAAIAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
-      <FileName>Data\VehicleDrivers.cs</FileName>
+      <FileName>Domain\VehicleDrivers.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="InnovationStrategies.IDrivers" Collapsed="true">
-    <Position X="2.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Interfaces\IDrivers.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="InnovationStrategies.IVehicles" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
-      <FileName>Interfaces\IVehicles.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="InnovationStrategies.IInfringementType" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IInfringementType.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="InnovationStrategies.IInfringementDrivers" Collapsed="true">
-    <Position X="4.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IInfringementDrivers.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

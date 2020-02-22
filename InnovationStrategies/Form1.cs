@@ -25,7 +25,11 @@ namespace InnovationStrategies
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            InfringementTypeService.AddInfringement(txtInfringement.Text, decimal.ToInt32(nudPoints.Value));
+            InfringementTypeService its = new InfringementTypeService();
+
+            its.AddInfringement(txtInfringement.Text, decimal.ToInt32(nudPoints.Value));
+
+            its = null;
 
             txtInfringement.Text = "";
             nudPoints.Value=1;
@@ -33,7 +37,11 @@ namespace InnovationStrategies
 
         private void btnOkDriver_Click(object sender, EventArgs e)
         {
-            DriverService.AddDriver(txtDni.Text, txtName.Text, txtSurnames.Text);
+            DriversService ds = new DriversService();
+
+            ds.AddDriver(txtDni.Text, txtName.Text, txtSurnames.Text);
+
+            ds = null;
 
             txtDni.Text = "";
             txtName.Text = "";
@@ -42,7 +50,11 @@ namespace InnovationStrategies
 
         private void btnOkInfringement_Click(object sender, EventArgs e)
         {
-            InfringementDriversService.AddInfringement(Convert.ToInt32(cmbNumberInfringement.SelectedValue.ToString()), txtVehicle.Text);
+            InfringementDriversService ids = new InfringementDriversService();
+
+            ids.AddInfringement(Convert.ToInt32(cmbNumberInfringement.SelectedValue.ToString()), txtVehicle.Text);
+
+            ids = null;
 
             txtVehicle.Text = "";
             cmbNumberInfringement.SelectedIndex = 0;
@@ -52,7 +64,11 @@ namespace InnovationStrategies
         {
             try
             {
-                VehiclesService.AddVehicle(txtVehicleRegistration.Text, txtBrand.Text, txtModel.Text, txtDniConductorHabitual.Text);
+                VehiclesService vs = new VehiclesService();
+
+                vs.AddVehicle(txtVehicleRegistration.Text, txtBrand.Text, txtModel.Text, txtDniConductorHabitual.Text);
+
+                vs = null;
             }
             catch(InvalidOperationException ex)
             {
@@ -88,7 +104,11 @@ namespace InnovationStrategies
             {
                 try
                 {
-                    VehicleDriversService.AddDriver(txtVehicleDriver.Text, txtDniDriver.Text);
+                    VehicleDriversService vds = new VehicleDriversService();
+
+                    vds.AddDriver(txtVehicleDriver.Text, txtDniDriver.Text);
+
+                    vds = null;
 
                     txtVehicleDriver.Text = "";
                     txtDniDriver.Text = "";

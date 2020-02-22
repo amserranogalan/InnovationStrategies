@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace InnovationStrategies
 {
-    public interface IVehicles
+    public interface IDriversService
     {
-        void Add();
-        bool Exist();
+        void AddDriver(string dni, string name, string surname);
     }
 }

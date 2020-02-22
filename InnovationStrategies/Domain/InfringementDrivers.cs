@@ -7,60 +7,17 @@ using System.Data;
 
 namespace InnovationStrategies
 {
-    public class InfringementDrivers : IInfringementDrivers
+    public class InfringementDrivers
     {
         private int _NumberInfringement;
         private string _Dni;
         private DateTime _Date;
         private string _VehicleRegistration;
 
-        public int NumberInfringement
-        {
-            get
-            {
-                return _NumberInfringement;
-            }
-            set
-            {
-                _NumberInfringement = value;
-            }
-        }
-
-        public string Dni
-        {
-            get
-            {
-                return _Dni;
-            }
-            set
-            {
-                _Dni = value;
-            }
-        }
-
-        public DateTime Date
-        {
-            get
-            {
-                return _Date;
-            }
-            set
-            {
-                _Date = value;
-            }
-        }
-
-        public string VehicleRegistration
-        {
-            get
-            {
-                return _VehicleRegistration;
-            }
-            set
-            {
-                _VehicleRegistration = value;
-            }
-        }
+        public int NumberInfringement { get; set; }
+        public string Dni { get; set; }
+        public DateTime Date { get; set; }
+        public string VehicleRegistration { get; set; }
 
         /// <summary>
         /// Add a violation and call the Drivers.Sanction method to discount the corresponding points
